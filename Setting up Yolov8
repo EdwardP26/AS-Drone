@@ -14,21 +14,22 @@ https://drive.google.com/drive/folders/1a3-yZJyXM4WJ3MmKijryGSzZa5q-Ut9s
 
 Open the terminal and run the following commands:
 
-'''
+```
 sudo apt install python3-pip
 pip3 install -U python-dateutil
 pip3 install ultralytics
 pip3 uninstall torch
 pip3 uninstall torchvision
-'''
-
+```
+```
 sudo apt-get -y update
 sudo apt-get -y install python3-pip libopenblas-dev
-
+```
+```
 export TORCH_INSTALL=https://developer.download.nvidia.cn/compute/redist/jp/v512/pytorch/torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl
 python3 -m pip install --upgrade pip
 python3 -m pip install --no-cache $TORCH_INSTALL
-
+```
 
 #### 3. Install Torchvision
 ```bash
@@ -36,47 +37,56 @@ sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libopenblas-dev libav
 git clone --branch v0.16.0 https://github.com/pytorch/vision torchvision
 cd torchvision
 export BUILD_VERSION=0.16.0
-python3 setup.py install --user```
+python3 setup.py install --user
+```
 
 #### 4. Installing Realsence
 ```bash 
 git clone https://github.com/JetsonHacksNano/installLibrealsense.git
-cd installLibrealsense/```
+cd installLibrealsense/
+```
 
 Edit the script file buildLibrealsense.sh.
 At line 135, add the following:
 
 ```bash
 -DBUILD_PYTHON_BINDINGS=bool:true -DPYTHON_EXECUTABLE=$(which python3)
+```
 
 Then run:
 ```bash
-./buildLibrealsense.sh -j 2```
+./buildLibrealsense.sh -j 2
+```
 
 #### 5. Validate pyrealsense2 Installation
 Open a new terminal and type:
 ```bash
 source ~/.bashrc
-python3```
+python3
+```
 
 
 Then in the Python prompt:
 ```bash
-import pyrealsense2 as rs```
+import pyrealsense2 as rs
+```
 
 If you get an error, exit Python with Ctrl+D, then run:
 
 ```bash
-pip list```
+pip list
+```
 
 If pyrealsense2 is not listed, install it manually:
 
 ```bash
-pip install pyrealsense2```
+pip install pyrealsense2
+```
 
 6. Run yolov8_rs.py
 Make sure the yolov8_rs.zip was extracted to your home directory. Then execute:
 
 ```bash
 cd ~/yolov8_rs/
-python3 yolov8_rs.py```
+python3 yolov8_rs.py
+```
