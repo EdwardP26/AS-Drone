@@ -3,6 +3,7 @@
 ## Key Capabilities:
 Real-Time Object Detection:
 YOLOv8 runs on Jetson Xavier NX, processes images from the RealSense camera, and transmits annotated frames wirelessly to a ground station using socket programming.
+
 Indoor Autonomous Navigation:
 OptiTrack Motion Capture System with Motive 2.7 tracks the drone using IR markers. Data is streamed via NatNet SDK and processed using MAVProxy. Pixhawk EKF3 is configured for indoor VISION_POSITION_ESTIMATE.
 
@@ -20,6 +21,32 @@ OptiTrack Motion Capture System with Motive 2.7 tracks the drone using IR marker
 - Dr. Bin Hu.
 
 <br> 
+
+##Final System Architecture:
+###Hardware
+- Holybro X500 V2 Carbon Fiber Frame
+- Pixhawk 6X Flight Controller
+- Holybro 2216 KV880 Motors x4
+- BLHeli S 20A ESCs x4
+- 1045 Propellers x4 (plus extras)
+- Nvidia Jetson Xavier NX (Ubuntu 20.04)
+- Intel RealSense D435i Camera
+- SiK Telemetry Radio V3 (915 MHz)
+- M8N GPS Module
+- HRB 5000mAh 14.8V 50C LiPo Battery
+- OptiTrack Markers (for indoor flight IR tracking)
+
+###Software Stack:
+- JetPack 5.1.2 (Jetson Xavier NX)
+- YOLOv8 (optimized with TensorRT)
+- PyTorch + OpenCV + Python 3.8
+- ArduCopter 4.3.4 (Pixhawk)
+- MAVProxy 3.0
+- QGroundControl / ArduPilot Mission Planner
+- Motive 2.7 + NatNet SDK
+- PuTTY (SSH interface)
+
+<br>
 
 ## Part 1: Image classification 
 
