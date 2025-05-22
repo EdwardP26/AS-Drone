@@ -14,13 +14,13 @@ https://drive.google.com/drive/folders/1a3-yZJyXM4WJ3MmKijryGSzZa5q-Ut9s
 
 Open the terminal and run the following commands:
 
-```
+'''
 sudo apt install python3-pip
 pip3 install -U python-dateutil
 pip3 install ultralytics
 pip3 uninstall torch
 pip3 uninstall torchvision
-```
+'''
 
 sudo apt-get -y update
 sudo apt-get -y install python3-pip libopenblas-dev
