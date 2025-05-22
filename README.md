@@ -1,8 +1,10 @@
-# AS-Drone
-
 # Custom Drone Development: From Hardware to Software
 
-## Main Goal:
+## Key Capabilities:
+Real-Time Object Detection:
+YOLOv8 runs on Jetson Xavier NX, processes images from the RealSense camera, and transmits annotated frames wirelessly to a ground station using socket programming.
+Indoor Autonomous Navigation:
+OptiTrack Motion Capture System with Motive 2.7 tracks the drone using IR markers. Data is streamed via NatNet SDK and processed using MAVProxy. Pixhawk EKF3 is configured for indoor VISION_POSITION_ESTIMATE.
 
 ### Developer team:
 - Javier C.
@@ -556,9 +558,4 @@ Ensure all these safety features are working correctly before proceeding to atta
 
   <br> 
 
-## Part 4.02 (optional): Visual Inertial Odometry (VIO)
 
-- [ ] Search for the possible ways to activate POSITION (controlling the drone with complete stability) or HOLD (it means to take off and hover in place at a stable altitude without the need for RC) mode for your Pixhawk 6x and go through the steps.
-- [ ] Find the Github repository or video related to Visual Inertial Odometry (VIO) for Pixhawk.
-- [ ] Follow the instructions and provide any difficulties or changes needed.
-- [ ] Test the VIO for indoor HOLD and POSITION mode.
