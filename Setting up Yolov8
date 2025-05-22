@@ -14,7 +14,7 @@ https://drive.google.com/drive/folders/1a3-yZJyXM4WJ3MmKijryGSzZa5q-Ut9s
 
 Open the terminal and run the following commands:
 
-```bash
+```
 sudo apt install python3-pip
 pip3 install -U python-dateutil
 pip3 install ultralytics
