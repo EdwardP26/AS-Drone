@@ -22,8 +22,8 @@ OptiTrack Motion Capture System with Motive 2.7 tracks the drone using IR marker
 
 <br> 
 
-##Final System Architecture:
-###Hardware
+## Final System Architecture:
+### Hardware
 - Holybro X500 V2 Carbon Fiber Frame
 - Pixhawk 6X Flight Controller
 - Holybro 2216 KV880 Motors x4
@@ -36,7 +36,7 @@ OptiTrack Motion Capture System with Motive 2.7 tracks the drone using IR marker
 - HRB 5000mAh 14.8V 50C LiPo Battery
 - OptiTrack Markers (for indoor flight IR tracking)
 
-###Software Stack:
+### Software Stack:
 - JetPack 5.1.2 (Jetson Xavier NX)
 - YOLOv8 (optimized with TensorRT)
 - PyTorch + OpenCV + Python 3.8
